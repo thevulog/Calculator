@@ -1,0 +1,97 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <h1 class="display-1 text-center modak-regular">ScoreKeeper</h1>
+    <a class="btn btn-primary" href="/form">Go to form page</a>
+	<a class="btn btn-primary" href="/calculator">Calculator app</a>
+
+    <section class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <img
+            src="https://images.unsplash.com/photo-1534158914592-062992fbe900?q=80&w=3784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h1 class="text-center">
+              <span id="player1DisplaySc">0</span> to <span
+                id="player2DisplaySc">0</span
+              >
+            </h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4 d-flex justify-content-center p-5">
+            <div class="form-floating">
+				<select class="form-select" id="playto" aria-label="Floating label select example">
+				  <option selected>Open this select menu</option>
+				  <option value="1">One</option>
+				  <option value="2">Two</option>
+				  <option value="3">Three</option>
+				  <option value="4">Four</option>
+				  <option value="5">five</option>
+				  <option value="6">Six</option>
+				</select>
+				<label for="floatingSelect">Works with selects</label>
+			  </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4 d-flex justify-content-center p-5">
+            <button id="p1Button" class="btn btn-lg btn-warning"
+              >Player 1</button
+            >
+          </div>
+
+          <div class="col-lg-4 d-flex justify-content-center p-5">
+            <button id="p2Button" class="btn btn-lg btn-info">Player 2</button>
+          </div>
+
+          <div class="col-lg-8 d-flex justify-content-center p-0">
+            <button id="reset" class="btn btn-lg btn-danger p-3 w-50"
+              >RESET
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="/src/app.js" defer></script>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    /* width: 800px; */
+    /* max-width: calc(100% - 2rem); */
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+    background-color: #fefae0;
+  }
+  .astro-a {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 220px;
+    height: auto;
+    z-index: -1;
+  }
+
+  h1 {
+    color: #283618;
+  }
+</style>

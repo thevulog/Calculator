@@ -1,0 +1,122 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Calculator App">
+    <h1 class="display-1">My Calculator App</h1>
+    
+    <section class="container-fluid container-sm ">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-xl-6 bg-dark rounded-5 p-3">
+             
+                <div class="row text-center p-3 pb-0">
+                    
+                    <div class=" d-flex justify-content-end align-items-end pb-0 pe-4" style="height: 150px;">
+                        <h1 class="display-1 text-white">54</h1>
+                    </div>
+                    
+                </div>
+                <div class="row justify-content-center text-center p-3">
+                    <div class="col-3 ">
+                        <button type="button" class="btn btn-danger btn-lg rounded-circle fs-1">C</button>
+                    </div>
+                    <div class="col-3 ">
+                        <button type="button" class="btn btn-primary btn-lg rounded-circle fs-1">+/-</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-primary btn-lg rounded-circle fs-1">%</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-warning btn-lg rounded-circle fs-1">/</button>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center text-center p-3">
+                    <div class="col-3 ">
+                        <button type="button" id="numpad-seven" class="btn btn-secondary btn-lg rounded-circle fs-1">7</button>
+                    </div>
+                    <div class="col-3 ">
+                        <button type="button" class="btn btn-secondary btn-lg rounded-circle fs-1">8</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-secondary btn-lg rounded-circle fs-1">9</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" id="numpad-multiply" class="btn btn-warning btn-lg rounded-circle fs-1">X</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center  p-3">
+                    <div class="col-3 ">
+                        <button type="button" class="btn btn-secondary btn-lg rounded-circle fs-1">4</button>
+                    </div>
+                    <div class="col-3 ">
+                        <button type="button" class="btn btn-secondary btn-lg rounded-circle fs-1">5</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-secondary btn-lg rounded-circle fs-1">6</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-warning btn-lg rounded-circle fs-1">-</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center p-3">
+                    <div class="col-3 ">
+                        <button type="button" class="btn btn-secondary btn-lg rounded-circle fs-1">7</button>
+                    </div>
+                    <div class="col-3 ">
+                        <button type="button" class="btn btn-secondary btn-lg rounded-circle fs-1">8</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-secondary btn-lg rounded-circle fs-1">9</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" id="numpad-plus" class="btn btn-warning btn-lg rounded-circle fs-1">+</button>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center text-center p-3">
+                    <div class="col-3 ">
+                        <button type="button" class="btn btn-primary btn-lg rounded-circle fs-1">S</button>
+                    </div>
+                    <div class="col-3 ">
+                        <button type="button" class="btn btn-secondary btn-lg rounded-circle fs-1">0</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-secondary btn-lg rounded-circle fs-1">.</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-warning btn-lg rounded-circle fs-1">=</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        
+    </section>
+
+     <!-- Link to the external JavaScript file -->
+  <script src="/src/javascript/calc.js" defer></script>
+
+</Layout>
+
+<style>
+    body {
+        background-color: white;
+    }
+
+    button {
+        width: 100px;
+        height: 100px
+
+    }
+
+    .container {
+        width: 55%;
+    }
+
+   
+    
+
+</style>
